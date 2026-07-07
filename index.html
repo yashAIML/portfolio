@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Raundal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar glass">
+        <div class="logo">Portfolio - YASH RAUNDAL<span class="dot">.</span></div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#platforms">Platforms</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero fade-in">
+            <div class="hero-content">
+                <h2 class="greeting">Hi, I'm</h2>
+                <h1 class="name glow-text">Yash Raundal</h1>
+                <div class="titles">
+                    <span class="title-badge purple-glow">Java Developer</span>
+                    <span class="title-badge cyan-glow">Competitive Programmer</span>
+                    <span class="title-badge purple-glow">AIML Undergraduate</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                    <!-- Replace '#' with actual resume PDF link when available -->
+                    <a href="Yash_Resume.pdf" class="btn secondary-btn" download><i class="fa-solid fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Bio Section -->
+        <section id="about" class="section glass-panel fade-in">
+            <h2 class="section-title">About Me</h2>
+            <p class="bio-text">
+                I'm a 3rd-year B.Tech student specializing in Computer Science with Artificial Intelligence & Machine Learning. I'm passionate about Java development, Data Structures & Algorithms, and building real-world projects. I actively participate in coding contests on Codeforces and solve problems on LeetCode to strengthen my problem-solving skills. My goal is to become a skilled Software Engineer by continuously learning and building impactful applications.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section fade-in">
+            <h2 class="section-title">Skills & Tech Stack</h2>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-card tilt-card glass">
+                    <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-brands fa-java"></i> Java</li>
+                        <li><i class="fa-brands fa-python"></i> Python</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <li><i class="fa-brands fa-html5"></i> HTML / CSS</li>
+                        <li><i class="fa-solid fa-database"></i> SQL</li>
+                    </ul>
+                </div>
+                
+                <!-- Core CS -->
+                <div class="skill-card tilt-card glass">
+                    <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Core CS</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-network-wired"></i> Data Structures & Algorithms</li>
+                        <li><i class="fa-solid fa-cubes"></i> Object-Oriented Programming</li>
+                        <li><i class="fa-solid fa-lightbulb"></i> Problem Solving</li>
+                        <li><i class="fa-solid fa-server"></i> DBMS & Operating Systems</li>
+                        <li><i class="fa-solid fa-laptop-code"></i> Software Engineering</li>
+                    </ul>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="skill-card tilt-card glass">
+                    <div class="card-icon"><i class="fa-solid fa-toolbox"></i></div>
+                    <h3>Tools</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-brands fa-git-alt"></i> Git & GitHub</li>
+                        <li><i class="fa-solid fa-code-commit"></i> VS Code & IntelliJ IDEA</li>
+                        <li><i class="fa-solid fa-database"></i> MySQL</li>
+                        <li><i class="fa-solid fa-pen-nib"></i> Canva & Figma</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Platforms Section -->
+        <section id="platforms" class="section fade-in">
+            <h2 class="section-title">Coding Profiles</h2>
+            <div class="platforms-grid">
+                
+                <!-- LeetCode -->
+                <div class="platform-card tilt-card glass">
+                    <div class="platform-logo"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="platform-name">LeetCode</h3>
+                    <a href="https://leetcode.com/u/yashraundal_45/" target="_blank" class="visit-btn">Visit Profile</a>
+                </div>
+
+                <!-- Codeforces -->
+                <div class="platform-card tilt-card glass">
+                    <div class="platform-logo"><i class="fa-solid fa-chart-simple"></i></div>
+                    <h3 class="platform-name">Codeforces</h3>
+                    <a href="https://codeforces.com/profile/yashjava2202" target="_blank" class="visit-btn">Visit Profile</a>
+                </div>
+
+                <!-- Codolio -->
+                <div class="platform-card tilt-card glass">
+                    <div class="platform-logo"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3 class="platform-name">Codolio</h3>
+                    <a href="https://codolio.com/profile/YashJAVA" target="_blank" class="visit-btn">Visit Profile</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="projects" class="section fade-in">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-card tilt-card glass">
+                <div class="project-content">
+                    <span class="project-role"><i class="fa-solid fa-star"></i> Co-founder</span>
+                    <h3 class="project-title glow-text">VAHAM Store</h3>
+                    <p class="project-desc">A premium oversized clothing brand website with modern UI and product showcase.</p>
+                    <div class="tech-stack">
+                        <span>Shopify</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://vaham.store/" target="_blank" class="btn primary-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                </div>
+                <!-- Abstract decorative element for project -->
+                <div class="project-visual">
+                    <div class="abstract-shape shape-1"></div>
+                    <div class="abstract-shape shape-2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section glass-panel fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-desc">Feel free to reach out for collaborations or just a friendly hello!</p>
+            <div class="contact-links">
+                <a href="mailto:yourmail@example.com" class="contact-item tilt-card glass">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://github.com/yashAIML" target="_blank" class="contact-item tilt-card glass">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/yash-raundal-a571593a8/" target="_blank" class="contact-item tilt-card glass">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <p>&copy; 2026 Yash Raundal. Built with <i class="fa-solid fa-heart neon-heart"></i> and a lot of caffeine.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
