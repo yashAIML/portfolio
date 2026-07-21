@@ -13,118 +13,209 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    
+    <div id="scroll-progress"></div>
+
     <!-- Interactive Background Canvas -->
     <canvas id="bg-canvas"></canvas>
     
-    <!-- Custom Cursor Glow -->
-    <div class="cursor-glow"></div>
-
     <nav class="navbar glass">
         <div class="logo">Portfolio - YASH RAUNDAL<span class="dot">.</span></div>
         <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#platforms">Platforms</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#summary" class="nav-link">Summary</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#languages" class="nav-link">Languages</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
+        <!-- Hamburger Menu for Mobile -->
+        <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
     </nav>
 
     <main class="container">
         <!-- Hero Section -->
-        <section id="hero" class="hero fade-in">
+        <section id="hero" class="hero">
             <div class="hero-content">
                 <h2 class="greeting">Hi, I'm</h2>
-                <h1 class="name glow-text">Yash Raundal</h1>
+                <h1 class="name">Yash Raundal</h1>
                 <div class="titles">
-                    <span class="title-badge purple-glow">Java Developer</span>
-                    <span class="title-badge cyan-glow">Competitive Programmer</span>
-                    <span class="title-badge purple-glow">AIML Undergraduate</span>
+                    <span class="title-badge">Software Developer</span>
+                    <span class="title-badge">Java Developer</span>
+                    <span class="title-badge">Competitive Programmer</span>
                 </div>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn primary-btn">Get In Touch</a>
-                    <!-- Resume Link : -->
-                    <a href="https://drive.google.com/file/d/1CZNjYRj9XWJvznfBzDSXmeu8x1fVg8Uc/view?usp=sharing" class="btn secondary-btn" download><i class="fa-solid fa-download"></i> Visit Resume</a>
+                    <a href="https://drive.google.com/file/d/1CZNjYRj9XWJvznfBzDSXmeu8x1fVg8Uc/view?usp=drive_link" target="_blank" class="btn secondary-btn"><i class="fa-solid fa-file-lines"></i> Visit Resume</a>
                 </div>
             </div>
         </section>
 
-        <!-- About / Bio Section -->
-        <section id="about" class="section glass-panel fade-in">
+        <!-- About Section -->
+        <section id="about" class="section section-gradient">
             <h2 class="section-title">About Me</h2>
-            <p class="bio-text">
-                I'm a 3rd-year B.Tech student specializing in Computer Science with Artificial Intelligence & Machine Learning. I'm passionate about Java development, Data Structures & Algorithms, and building real-world projects. I actively participate in coding contests on Codeforces and solve problems on LeetCode to strengthen my problem-solving skills. My goal is to become a skilled Software Engineer by continuously learning and building impactful applications.
-            </p>
+            <div class="glass-panel fade-in">
+                <p class="bio-text">
+                    I am a third-year B.Tech Computer Science Engineering (AI & ML) student at Parul University with a strong interest in Software Development and Problem Solving. I enjoy building real-world applications using Java while continuously improving my Data Structures & Algorithms skills through competitive programming. I am passionate about learning modern technologies, writing clean code, and developing scalable software solutions. I am currently seeking Software Engineering Internship opportunities where I can contribute, learn, and grow.
+                </p>
+            </div>
+        </section>
+
+        <!-- Professional Summary -->
+        <section id="summary" class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="glass-panel summary-panel fade-in">
+                <div class="chip-container">
+                    <span class="chip glow-chip"><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE (AI & ML) Batch 2028</span>
+                    <span class="chip glow-chip"><i class="fa-brands fa-java"></i> Java Developer</span>
+                    <span class="chip glow-chip"><i class="fa-solid fa-network-wired"></i> Data Structures & Algorithms</span>
+                    <span class="chip glow-chip"><i class="fa-solid fa-cubes"></i> Object-Oriented Programming</span>
+                    <span class="chip glow-chip"><i class="fa-solid fa-database"></i> SQL</span>
+                    <span class="chip glow-chip"><i class="fa-solid fa-laptop-code"></i> Software Development</span>
+                    <span class="chip glow-chip"><i class="fa-solid fa-trophy"></i> Competitive Programming</span>
+                    <span class="chip glow-chip highlight"><i class="fa-solid fa-check-double"></i> 120+ Problems Solved</span>
+                    <span class="chip glow-chip pulse"><i class="fa-solid fa-briefcase"></i> Seeking Software Engineering Internship</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section section-gradient">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                
+                <div class="edu-card glass fade-in">
+                    <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="edu-details">
+                        <h3>Parul University</h3>
+                        <h4>B.Tech Computer Science Engineering (AI & ML)</h4>
+                        <div class="edu-stats">
+                            <span class="stat-badge"><i class="fa-solid fa-calendar"></i> Batch 2028</span>
+                            <span class="stat-badge"><i class="fa-solid fa-user-graduate"></i> Third Year</span>
+                            <span class="stat-badge highlight">CGPA: <span class="counter" data-target="7.02" data-decimals="2">0.00</span> / 10</span>
+                            <span class="stat-badge">Last Sem SGPA: 7.22 / 10</span>
+                            <span class="stat-badge"><i class="fa-solid fa-circle-check"></i> Backlogs: 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card glass fade-in">
+                    <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="edu-details">
+                        <h3>Higher Secondary Certificate (HSC)</h3>
+                        <div class="edu-stats">
+                            <span class="stat-badge highlight">Percentage: <span class="counter" data-target="76">0</span>%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card glass fade-in">
+                    <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="edu-details">
+                        <h3>Secondary School Certificate (SSC)</h3>
+                        <div class="edu-stats">
+                            <span class="stat-badge highlight">Percentage: <span class="counter" data-target="88.40" data-decimals="2">0.00</span>%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section fade-in">
+        <section id="skills" class="section">
             <h2 class="section-title">Skills & Tech Stack</h2>
             <div class="skills-grid">
-                <!-- Languages -->
-                <div class="skill-card tilt-card glass">
+                
+                <div class="skill-card glass fade-in">
                     <div class="card-icon"><i class="fa-solid fa-code"></i></div>
-                    <h3>Languages</h3>
-                    <ul class="skill-list">
-                        <li><i class="fa-brands fa-java"></i> Java</li>
-                        <li><i class="fa-brands fa-python"></i> Python</li>
-                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
-                        <li><i class="fa-brands fa-html5"></i> HTML / CSS</li>
-                        <li><i class="fa-solid fa-database"></i> SQL</li>
-                    </ul>
+                    <h3>Programming Languages</h3>
+                    <div class="chip-container small-chips">
+                        <span class="chip"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="chip"><i class="fa-solid fa-c"></i> C</span>
+                        <span class="chip"><i class="fa-solid fa-database"></i> SQL (Basic)</span>
+                        <span class="chip"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+                    </div>
                 </div>
                 
-                <!-- Core CS -->
-                <div class="skill-card tilt-card glass">
+                <div class="skill-card glass fade-in">
                     <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
                     <h3>Core CS</h3>
-                    <ul class="skill-list">
-                        <li><i class="fa-solid fa-network-wired"></i> Data Structures & Algorithms</li>
-                        <li><i class="fa-solid fa-cubes"></i> Object-Oriented Programming</li>
-                        <li><i class="fa-solid fa-lightbulb"></i> Problem Solving</li>
-                        <li><i class="fa-solid fa-server"></i> DBMS & Operating Systems</li>
-                        <li><i class="fa-solid fa-laptop-code"></i> Software Engineering</li>
-                    </ul>
+                    <div class="chip-container small-chips">
+                        <span class="chip"><i class="fa-solid fa-network-wired"></i> Data Structures & Algorithms</span>
+                        <span class="chip"><i class="fa-solid fa-cubes"></i> Object-Oriented Programming</span>
+                        <span class="chip"><i class="fa-solid fa-server"></i> DBMS</span>
+                        <span class="chip"><i class="fa-brands fa-linux"></i> Operating Systems</span>
+                        <span class="chip"><i class="fa-solid fa-globe"></i> Computer Networks</span>
+                        <span class="chip"><i class="fa-solid fa-laptop-code"></i> Software Development</span>
+                    </div>
                 </div>
 
-                <!-- Frameworks & Tools -->
-                <div class="skill-card tilt-card glass">
+                <div class="skill-card glass fade-in">
+                    <div class="card-icon"><i class="fa-solid fa-window-maximize"></i></div>
+                    <h3>Web Technologies</h3>
+                    <div class="chip-container small-chips">
+                        <span class="chip"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="chip"><i class="fa-brands fa-shopify"></i> Shopify Liquid</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass fade-in">
                     <div class="card-icon"><i class="fa-solid fa-toolbox"></i></div>
-                    <h3>Tools</h3>
-                    <ul class="skill-list">
-                        <li><i class="fa-brands fa-git-alt"></i> Git & GitHub</li>
-                        <li><i class="fa-solid fa-code-commit"></i> VS Code & IntelliJ IDEA</li>
-                        <li><i class="fa-solid fa-database"></i> MySQL</li>
-                        <li><i class="fa-solid fa-pen-nib"></i> Canva & Figma</li>
-                    </ul>
+                    <h3>Tools & Platforms</h3>
+                    <div class="chip-container small-chips">
+                        <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="chip"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="chip"><i class="fa-solid fa-code"></i> VS Code</span>
+                        <span class="chip"><i class="fa-brands fa-shopify"></i> Shopify</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass fade-in">
+                    <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3>Soft Skills</h3>
+                    <div class="chip-container small-chips">
+                        <span class="chip"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+                        <span class="chip"><i class="fa-solid fa-magnifying-glass-chart"></i> Analytical Thinking</span>
+                        <span class="chip"><i class="fa-solid fa-comments"></i> Communication</span>
+                        <span class="chip"><i class="fa-solid fa-people-group"></i> Teamwork</span>
+                        <span class="chip"><i class="fa-solid fa-bolt"></i> Quick Learner</span>
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Platforms Section -->
-        <section id="platforms" class="section fade-in">
+        <!-- Platforms Section (Coding Profiles) -->
+        <section id="platforms" class="section section-gradient">
             <h2 class="section-title">Coding Profiles</h2>
             <div class="platforms-grid">
                 
-                <!-- LeetCode -->
-                <div class="platform-card tilt-card glass">
+                <div class="platform-card glass fade-in">
                     <div class="platform-logo"><i class="fa-solid fa-code"></i></div>
                     <h3 class="platform-name">LeetCode</h3>
+                    <p class="platform-stats">LeetCode Rating: <span class="counter" data-target="1460">0</span></p>
                     <a href="https://leetcode.com/u/yashraundal_45/" target="_blank" class="visit-btn">Visit Profile</a>
                 </div>
 
-                <!-- Codeforces -->
-                <div class="platform-card tilt-card glass">
+                <div class="platform-card glass fade-in">
                     <div class="platform-logo"><i class="fa-solid fa-chart-simple"></i></div>
                     <h3 class="platform-name">Codeforces</h3>
+                    <p class="platform-stats">Codeforces Rating: <span class="counter" data-target="361">0</span></p>
                     <a href="https://codeforces.com/profile/yashjava2202" target="_blank" class="visit-btn">Visit Profile</a>
                 </div>
 
-                <!-- Codolio -->
-                <div class="platform-card tilt-card glass">
+                <div class="platform-card glass fade-in">
                     <div class="platform-logo"><i class="fa-solid fa-laptop-code"></i></div>
                     <h3 class="platform-name">Codolio</h3>
+                    <p class="platform-stats">Coding Portfolio</p>
                     <a href="https://codolio.com/profile/YashJAVA" target="_blank" class="visit-btn">Visit Profile</a>
                 </div>
 
@@ -132,43 +223,115 @@
         </section>
 
         <!-- Project Section -->
-        <section id="projects" class="section fade-in">
+        <section id="projects" class="section">
             <h2 class="section-title">Projects</h2>
-            <div class="project-card tilt-card glass">
+            <div class="project-card glass fade-in">
                 <div class="project-content">
-                    <span class="project-role"><i class="fa-solid fa-star"></i> Co-founder</span>
-                    <h3 class="project-title glow-text">VAHAM Store</h3>
-                    <p class="project-desc">A premium oversized clothing brand website with modern UI and product showcase.</p>
-                    <div class="tech-stack">
-                        <span>Shopify</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                    <span class="project-role"><i class="fa-solid fa-star"></i> Co-Founder</span>
+                    <h3 class="project-title">VAHAM Store</h3>
+                    <p class="project-desc">
+                        Developed and managed a premium oversized clothing brand website using Shopify, HTML, CSS, JavaScript, and Liquid.<br><br>
+                        Worked on UI customization, product pages, responsive layouts, branding, and user experience improvements.
+                    </p>
+                    <div class="chip-container small-chips">
+                        <span class="chip">Shopify</span>
+                        <span class="chip">Liquid</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
                     </div>
-                    <a href="https://vaham.store/" target="_blank" class="btn primary-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    <div class="project-links mt-4">
+                        <a href="https://vaham.store/" target="_blank" class="btn primary-btn"><i class="fa-solid fa-globe"></i> Live Website</a>
+                    </div>
                 </div>
-                <!-- Abstract decorative element for project -->
-                <div class="project-visual">
-                    <div class="abstract-shape shape-1"></div>
-                    <div class="abstract-shape shape-2"></div>
+            </div>
+        </section>
+
+        <!-- Virtual Experience Section -->
+        <section id="experience" class="section section-gradient">
+            <h2 class="section-title">Virtual Experience</h2>
+            <div class="experience-grid">
+                
+                <!-- Experience 1 -->
+                <div class="experience-card glass fade-in">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <div>
+                            <h3 class="exp-company">Wells Fargo</h3>
+                            <h4 class="exp-title">Software Engineering Virtual Experience</h4>
+                        </div>
+                    </div>
+                    <p class="exp-desc">
+                        Completed a Software Engineering Virtual Experience focused on Java, Object-Oriented Programming, Database Design, Software Architecture, Backend Development, and real-world engineering tasks.
+                    </p>
+                    <div class="chip-container small-chips exp-skills">
+                        <span class="chip">Java</span>
+                        <span class="chip">OOP</span>
+                        <span class="chip">DBMS</span>
+                        <span class="chip">Software Engineering</span>
+                        <span class="chip">Backend Development</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1m_x3E6u235UZ__Pve5JSeYJ1nCs3A9vs/view" target="_blank" class="btn secondary-btn mt-auto"><i class="fa-solid fa-certificate"></i> Visit Certificate</a>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="experience-card glass fade-in">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fa-solid fa-plane"></i></div>
+                        <div>
+                            <h3 class="exp-company">Skyscanner</h3>
+                            <h4 class="exp-title">Front-End Software Engineering Virtual Experience</h4>
+                        </div>
+                    </div>
+                    <p class="exp-desc">
+                        Completed a Front-End Software Engineering Virtual Experience focused on responsive web development, modern JavaScript, UI development, and creating clean user interfaces following industry standards.
+                    </p>
+                    <div class="chip-container small-chips exp-skills">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Frontend</span>
+                        <span class="chip">Responsive Design</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1CFWKUCQPDemnBCAWgN3CK5oRHJQIjFfB/view" target="_blank" class="btn secondary-btn mt-auto"><i class="fa-solid fa-certificate"></i> Visit Certificate</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages" class="section">
+            <h2 class="section-title">Languages</h2>
+            <div class="lang-grid">
+                <div class="lang-card glass fade-in">
+                    <i class="fa-solid fa-language"></i>
+                    <h3>English</h3>
+                </div>
+                <div class="lang-card glass fade-in">
+                    <i class="fa-solid fa-language"></i>
+                    <h3>Hindi</h3>
+                </div>
+                <div class="lang-card glass fade-in">
+                    <i class="fa-solid fa-language"></i>
+                    <h3>Marathi</h3>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section glass-panel fade-in">
+        <section id="contact" class="section glass-panel">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-desc">Feel free to reach out for collaborations or just a friendly hello!</p>
+            <p class="contact-desc">Feel free to reach out for collaborations, internships, or just a friendly hello!</p>
             <div class="contact-links">
-                <a href="mailto:yourmail@example.com" class="contact-item tilt-card glass">
+                <a href="mailto:yourmail@example.com" class="contact-item glass fade-in">
                     <i class="fa-solid fa-envelope"></i>
-                    <span>Email Me</span>
+                    <span>Professional Email</span>
                 </a>
-                <a href="https://github.com/yashAIML" target="_blank" class="contact-item tilt-card glass">
+                <a href="https://github.com/yashAIML" target="_blank" class="contact-item glass fade-in">
                     <i class="fa-brands fa-github"></i>
                     <span>GitHub</span>
                 </a>
-                <a href="https://www.linkedin.com/in/yash-raundal-a571593a8/" target="_blank" class="contact-item tilt-card glass">
+                <a href="https://www.linkedin.com/in/yash-raundal-a571593a8/" target="_blank" class="contact-item glass fade-in">
                     <i class="fa-brands fa-linkedin"></i>
                     <span>LinkedIn</span>
                 </a>
@@ -177,8 +340,11 @@
     </main>
 
     <footer class="glass">
-        <p>&copy; 2026 Yash Raundal. Built with <i class="fa-solid fa-heart neon-heart"></i> and a lot of caffeine.</p>
+        <p>Designed & Developed by Yash Raundal &copy; 2026</p>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="glass" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>
